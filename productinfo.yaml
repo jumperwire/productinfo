@@ -48,8 +48,8 @@ spec:
     spec:
       containers:
       - name: details
-        image: docker.io/maistra/examples-bookinfo-details-v1:0.12.0
-        imagePullPolicy: IfNotPresent
+        image: docker.io/jumperwire/details-v1:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 9080
 ---
@@ -90,7 +90,7 @@ spec:
       containers:
       - name: ratings
         image: docker.io/maistra/examples-bookinfo-ratings-v1:0.12.0
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         ports:
         - containerPort: 9080
 ---
@@ -131,7 +131,7 @@ spec:
       containers:
       - name: reviews
         image: docker.io/maistra/examples-bookinfo-reviews-v1:0.12.0
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         ports:
         - containerPort: 9080
 ---
@@ -155,7 +155,7 @@ spec:
       containers:
       - name: reviews
         image: docker.io/maistra/examples-bookinfo-reviews-v2:0.12.0
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         ports:
         - containerPort: 9080
 ---
@@ -179,7 +179,7 @@ spec:
       containers:
       - name: reviews
         image: docker.io/maistra/examples-bookinfo-reviews-v3:0.12.0
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         ports:
         - containerPort: 9080
 ---
@@ -220,7 +220,7 @@ spec:
       containers:
       - name: productpage
         image: docker.io/jumperwire/productpage-v1:latest
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         ports:
         - containerPort: 9080
 ---
